@@ -47,11 +47,11 @@ Meetings
 
 To be determined
 
-### Face to face meetings {#f2f}
+### Face to face meetings
 
 None currently scheduled.
 
-Communications {#comm}
+Communications
 --------------
 
 The main communication channel for this group is the [publicly archived
