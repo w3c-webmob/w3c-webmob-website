@@ -56,10 +56,10 @@ Communications {#comm}
 
 The main communication channel for this group is the [publicly archived
 mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/)
-`<public-web-mobile@w3.org>`.
+<public-web-mobile@w3.org>.
 
 Logistical and administrative discussions can be addressed to the
 [member-only archived mailing
 list](http://lists.w3.org/Archives/Member/member-web-mobile/)
-`<member-web-mobile@w3.org>`
+<member-web-mobile@w3.org>
 
