@@ -26,6 +26,10 @@ Planned deliverables:
 Participate
 -----------
 
+Anybody can join the [publicly archived
+mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/)
+<public-web-mobile@w3.org> by sending a mail to <public-web-mobile-subscribe@w3.org> with “subscribe” in the subject. 
+
 If you are employed by a [W3C
 Member](http://www.w3.org/Consortium/Member/List) and want to join this
 group, please ask your [Advisory Committee
@@ -35,7 +39,7 @@ instructions](http://www.w3.org/2004/01/pp-impl/65406/instructions).
 
 If you are not employed by [W3C
 Member](http://www.w3.org/Consortium/Member/List) and have specific
-expertise to bring to this group, the [said
+expertise to bring to this group, and want to be more heavily involved in its work (e.g. becoming a document editor), the [said
 instructions](http://www.w3.org/2004/01/pp-impl/65406/instructions)
 explain how to get Invited Expert status.
 
