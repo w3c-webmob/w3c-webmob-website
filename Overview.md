@@ -46,6 +46,25 @@ explain how to get Invited Expert status.
 See the list of [current
 participants](http://www.w3.org/2000/09/dbwg/details?group=65406&public=1).
 
+Work Mode
+---------
+
+Most of the work done by the group is made through our [publicly archived
+mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/)
+<public-web-mobile@w3.org>.
+
+Action items and issues are tracked in the [group's tracker](http://www.w3.org/Mobile/IG/track/).
+
+We use the [github's w3c-webmob](https://github.com/w3c-webmob) account to manage a number of our deliverables, including [this Web site](https://github.com/w3c-webmob/w3c-webmob-website).
+
+We use a [dedicated space in the W3C wiki](http://www.w3.org/wiki/Mobile/) as our sratch space for community contributions.
+
+Logistical and administrative discussions can be addressed to the
+[member-only archived mailing
+list](http://lists.w3.org/Archives/Member/member-web-mobile/)
+<member-web-mobile@w3.org>
+
+
 Meetings
 --------
 
@@ -55,15 +74,4 @@ To be determined
 
 None currently scheduled.
 
-Communications
---------------
-
-The main communication channel for this group is the [publicly archived
-mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/)
-<public-web-mobile@w3.org>.
-
-Logistical and administrative discussions can be addressed to the
-[member-only archived mailing
-list](http://lists.w3.org/Archives/Member/member-web-mobile/)
-<member-web-mobile@w3.org>
 
