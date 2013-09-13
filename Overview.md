@@ -28,7 +28,7 @@ Participate
 
 Anybody can join the [publicly archived
 mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/)
-<public-web-mobile@w3.org> by sending a mail to <public-web-mobile-subscribe@w3.org> with “subscribe” in the subject. 
+<public-web-mobile@w3.org> by sending a mail to <public-web-mobile-request@w3.org> with "subscribe" in the subject. 
 
 If you are employed by a [W3C
 Member](http://www.w3.org/Consortium/Member/List) and want to join this
