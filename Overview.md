@@ -53,7 +53,7 @@ Deliverables
 Planned deliverables:
 
 -   [Core Mobile Web Platform 2012](http://coremob.github.io/coremob-2012/FR-coremob-20130131.html) Deployment Status
--   [Standards for Web Applications on Mobile](http://www.w3.org/2012/05/mobile-web-app-state/): current state and roadmap
+-   [Standards for Web Applications on Mobile](http://www.w3.org/Mobile/mobile-web-app-state/): current state and roadmap
 -   New versions of Core Mobile Web Platform report
 -   Gap analysis
 -   Use cases and scenarios for context-relevant user experiences
