@@ -10,28 +10,57 @@ development of Web technology so that it becomes a compelling platform
 for mobile applications and the obvious choice for cross platform
 development*.
 
+Current Status
+--------------
+
+We're working on the work plan for the group. At the moment this involves having an initial teleconference,
+arranging regular teleconferences, planning deliverables and preparing for an initial face to face meeting - at
+W3C TPAC in China in November (see [Meetings](#meetings)).
+
+Please follow progress and [participate](#participate) by joining the [public mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/).
+
+Background
+----------
+
+The Web and Mobile Interest Group (Webmob) has been formed to progress work started by the
+[W3C Core Mobile Platform Community Group](http://www.w3.org/community/coremob/) (Coremob), to progress work
+started under the W3C [Closing the Gap with Native](http://www.w3.org/wiki/Closing_the_gap_with_native) Headlight Project
+and to take on maintenance of  [Standards for Web Applications on Mobile](http://www.w3.org/2012/05/mobile-web-app-state/).
+
+The group's existence reflects a feeling that while there are and will continue to be
+classes of application that are best implemented using "native technology". Native Applications are
+implemented using specific technology directly targeted at specific vendors' hardware, platform and distribution
+mechanisms.
+
+However, it is also felt that Web technology is a natural way to implement many applications that
+today are widely implemented using native technology. The reasons for this are various. In part,
+"apps" are perceived to be "the" approach to mobile. So there is
+a need to educate and evangelise the advantages of a Web approach over a native approach. In addition, Web technology
+does not today cover a sufficiently broad range of application use cases - because features have not been
+standardised sufficiently or because implementation of standardised features has not been sufficiently consistent
+to allow for straightforward development using them.
+
+W3C Coremob's [Core Mobile Web Platform 2012](http://coremob.github.io/coremob-2012/FR-coremob-20130131.html) identified
+a set of simple mobile use cases and analyzed the requirements on Web technology and the state of readiness of the
+implementation of that technology.
+
+The Web and Mobile Interest Group exists to help remedy the currently perceived weaknesses of the Web platform and
+especially to help to develop the Web's inherent strengths, especially in respect of its cross platform nature.
+
 Deliverables
 ------------
 
 Planned deliverables:
 
--   Core Mobile Web Platform 2012 Deployment Status
--   Standards for Web Applications on Mobile: current state and roadmap
+-   [Core Mobile Web Platform 2012](http://coremob.github.io/coremob-2012/FR-coremob-20130131.html) Deployment Status
+-   [Standards for Web Applications on Mobile](http://www.w3.org/2012/05/mobile-web-app-state/): current state and roadmap
 -   New versions of Core Mobile Web Platform report
 -   Gap analysis
 -   Use cases and scenarios for context-relevant user experiences
 -   Multi-device and cross-device user experiences on the Web
 -   Usability and Efficiency Considerations for the Web on Mobile
 
-Current Status
---------------
-
-We're working on the work plan for the group. At the moment this involves having an initial teleconference,
-arranging regular teleconferences, planning deliverables and preparing for an initial face to face meeting - at W3C TPAC in November.
-
-Please follow progress and participate by joining the public mailing list (see below).
-
-Participate
+Participate<a id="participate"></a>
 -----------
 
 In short, we'd love people to get involved, whether you're a member of the W3C or not.
@@ -57,13 +86,13 @@ See the list of [W3C members who participate](http://www.w3.org/2000/09/dbwg/det
 Work Mode
 ---------
 
-Most of the work done by the group is made through our [publicly archived
+The work done by the group is carried out on our [publicly archived
 mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/)
-<public-web-mobile@w3.org>.
+<public-web-mobile@w3.org>. In addition there will be a number of face to face meetings.
 
 Action items and issues are tracked in the [group's tracker](http://www.w3.org/Mobile/IG/track/).
 
-We use the [github's w3c-webmob](https://github.com/w3c-webmob) account to manage a number of our deliverables, including [this Web site](https://github.com/w3c-webmob/w3c-webmob-website).
+We use the [GitHub's w3c-webmob](https://github.com/w3c-webmob) account to manage a number of our deliverables, including [this Web site](https://github.com/w3c-webmob/w3c-webmob-website).
 
 We use a [dedicated space in the W3C wiki](http://www.w3.org/wiki/Mobile/) as our scratch space for community contributions.
 
@@ -73,13 +102,13 @@ list](http://lists.w3.org/Archives/Member/member-web-mobile/)
 <member-web-mobile@w3.org>
 
 
-Meetings
+Meetings<a id="meetings"></a>
 --------
 
 We're in the process of arranging an initial Teleconference and planning subsequent ones.
 
 ### Face to face meetings
 
-We plan to meet on Thursday and Friday (14th and 15th Nov) at [TPAC] (http://www.w3.org/2013/11/TPAC/).
+We plan to meet on Thursday and Friday (14th and 15th Nov) at [TPAC](http://www.w3.org/2013/11/TPAC/).
 
 
