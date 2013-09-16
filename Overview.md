@@ -1,11 +1,11 @@
-% Web and Mobile Interest Group
+% Web and Mobile Interest Group (WebMob)
 
 Mission
 -------
 
 As defined in its
 [charter](http://www.w3.org/2013/07/webmobile-ig-charter.html), the
-mission of the Web and Mobile Interest Group is *to accelerate the
+mission of the Web and Mobile Interest Group (also known as **WebMob**) is *to accelerate the
 development of Web technology so that it becomes a compelling platform
 for mobile applications and the obvious choice for cross platform
 development*.
