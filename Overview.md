@@ -96,6 +96,8 @@ We use the [GitHub's w3c-webmob](https://github.com/w3c-webmob) account to manag
 
 We use a [dedicated space in the W3C wiki](http://www.w3.org/wiki/Mobile/) as our scratch space for community contributions.
 
+We use [the W3C IRC server](http://www.w3.org/Project/IRC/) (available also as a [Web app](http://irc.w3.org/)) on the #webmob channel during our meetings to take minutes and manage action items. A number of the group participants (including the chairs and staff contacts) remain on the channel most of the time.
+
 Logistical and administrative discussions can be addressed to the
 [member-only archived mailing
 list](http://lists.w3.org/Archives/Member/member-web-mobile/)
