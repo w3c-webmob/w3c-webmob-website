@@ -96,7 +96,7 @@ We use the [GitHub's w3c-webmob](https://github.com/w3c-webmob) account to manag
 
 We use a [dedicated space in the W3C wiki](http://www.w3.org/wiki/Mobile/) as our scratch space for community contributions.
 
-We use [the W3C IRC server](http://www.w3.org/Project/IRC/) (available also as a [Web app](http://irc.w3.org/)) on the #webmob channel during our meetings to take minutes and manage action items. A number of the group participants (including the chairs and staff contacts) remain on the channel most of the time.
+We use [the W3C IRC server](http://www.w3.org/Project/IRC/) (available also as a [Web app](http://irc.w3.org/)) on the \#webmob channel during our meetings to take minutes and manage action items. A number of the group participants (including the chairs and staff contacts) remain on the channel most of the time.
 
 Logistical and administrative discussions can be addressed to the
 [member-only archived mailing
@@ -107,7 +107,9 @@ list](http://lists.w3.org/Archives/Member/member-web-mobile/)
 Meetings<a id="meetings"></a>
 --------
 
-We're in the process of arranging an initial Teleconference and planning subsequent ones.
+Our initial teleconference will be on Weds 25th September at 1400 UTC. The [agenda and details of how to join the call](http://lists.w3.org/Archives/Public/public-web-mobile/2013Sep/0091.html) have been published.
+
+As part of that call we will be planning subsequent teleconferences.
 
 ### Face to face meetings
 
