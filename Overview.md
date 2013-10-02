@@ -107,9 +107,10 @@ list](http://lists.w3.org/Archives/Member/member-web-mobile/)
 Meetings<a id="meetings"></a>
 --------
 
-Our initial teleconference will be on Weds 25th September at 1400 UTC. The [agenda and details of how to join the call](http://lists.w3.org/Archives/Public/public-web-mobile/2013Sep/0091.html) have been published.
+Our second teleconference will be on Thursday October 10 at 1300 UTC. The [agenda and details of how to join the call](http://lists.w3.org/Archives/Public/public-web-mobile/2013Sep/0133.html) have been published.
 
-As part of that call we will be planning subsequent teleconferences.
+### Minutes
+* [Sep 25](http://www.w3.org/2013/09/25-webmob-minutes.html): IG goals, Modus Operandi, Closing the Gap report, Mobile roadmap, Taxonomy document
 
 ### Face to face meetings
 
