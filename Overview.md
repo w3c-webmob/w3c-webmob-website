@@ -13,7 +13,7 @@ development*.
 Current Status
 --------------
 
-We're working on the work plan for the group. At the moment this involves having an initial teleconference,
+We're working on the work plan for the group. At the moment this involves 
 arranging regular teleconferences, planning deliverables and preparing for an initial face to face meeting - at
 W3C TPAC in China in November (see [Meetings](#meetings)).
 
