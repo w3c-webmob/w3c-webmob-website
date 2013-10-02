@@ -19,6 +19,9 @@ W3C TPAC in China in November (see [Meetings](#meetings)).
 
 Please follow progress and [participate](#participate) by joining the [public mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/).
 
+Documents under discussion:
+* [Taxonomy of Mobile Application Platforms](http://w3c-webmob.github.io/apps-taxonomy/taxonomy.html) — [Github repo](https://github.com/w3c-webmob/apps-taxonomy)
+
 Background
 ----------
 
