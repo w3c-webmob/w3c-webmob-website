@@ -119,6 +119,6 @@ Our second teleconference will be on Thursday October 10 at 1300 UTC. The [agend
 
 ### Face to face meetings
 
-We plan to meet on Thursday and Friday (14th and 15th Nov) at [TPAC](http://www.w3.org/2013/11/TPAC/).
+We plan to meet on Thursday and Friday (14th and 15th Nov) at [TPAC](http://www.w3.org/2013/11/TPAC/): [preliminary agenda](http://www.w3.org/wiki/Mobile/TPAC_Face-to-Face).
 
 
