@@ -33,6 +33,7 @@ Documents under discussion:
     - [Gap analysis of Web Apps from a provider perspective](http://w3c-webmob.github.io/gap-analysis/provider-webapps.html)
     - [Closing the Gap from a provider perspective](http://w3c-webmob.github.io/gap-analysis/provider-actions.html)
 
+- [Clarification of the Webmob Charter, in respect of the word "mobile"](http://w3c-webmob.github.io/w3c-webmob-what-is-mobile/note.html) - [Github repo](https://github.com/w3c-webmob/w3c-webmob-what-is-mobile/)
 - [Community-maintained list of relevant articles and references](http://www.w3.org/wiki/Mobile/articles)
 
 Background
