@@ -22,6 +22,17 @@ Please follow progress and [participate](#participate) by joining the [public ma
 Documents under discussion:
 
 - [Taxonomy of Mobile Application Platforms](http://w3c-webmob.github.io/apps-taxonomy/taxonomy.html) - [Github repo](https://github.com/w3c-webmob/apps-taxonomy)
+- Closing the Gap with Native, Gap Analysis - [Github repo](https://github.com/w3c-webmob/gap-analysis)
+
+    A set of documents which together provide an analysis based on the earlier work of the [Closing the Gap with Native](http://www.w3.org/wiki/Closing_the_gap_with_native) Headlight Project
+
+    - [Comparison Framework of Mobile App Approaches from a UX perspective](http://w3c-webmob.github.io/gap-analysis/ux-comparison-framework.html)
+    - [Gap analysis of Web Apps from a UX perspective](http://w3c-webmob.github.io/gap-analysis/ux-webapps.html)
+    - [Closing the UX Gap](http://w3c-webmob.github.io/gap-analysis/ux-actions.html)
+    - [Comparison Framework of Mobile App Approaches from a provider perspective](http://w3c-webmob.github.io/gap-analysis/provider-comparison-framework.html)
+    - [Gap analysis of Web Apps from a provider perspective](http://w3c-webmob.github.io/gap-analysis/provider-webapps.html)
+    - [Closing the Gap from a provider perspective](http://w3c-webmob.github.io/gap-analysis/provider-actions.html)
+
 - [Community-maintained list of relevant articles and references](http://www.w3.org/wiki/Mobile/articles)
 
 Background
@@ -32,13 +43,8 @@ The Web and Mobile Interest Group (Webmob) has been formed to progress work star
 started under the W3C [Closing the Gap with Native](http://www.w3.org/wiki/Closing_the_gap_with_native) Headlight Project
 and to take on maintenance of  [Standards for Web Applications on Mobile](http://www.w3.org/2012/05/mobile-web-app-state/).
 
-The group's existence reflects a feeling that while there are and will continue to be
-classes of application that are best implemented using "native technology". Native Applications are
-implemented using specific technology directly targeted at specific vendors' hardware, platform and distribution
-mechanisms.
-
-However, it is also felt that Web technology is a natural way to implement many applications that
-today are widely implemented using native technology. The reasons for this are various. In part,
+Web technology is a natural way to implement many applications that
+today are widely implemented using native technology. There are felt to be a number of reasons why native technology is used. In part,
 "apps" are perceived to be "the" approach to mobile. So there is
 a need to educate and evangelise the advantages of a Web approach over a native approach. In addition, Web technology
 does not today cover a sufficiently broad range of application use cases - because features have not been
@@ -91,9 +97,9 @@ See the list of [W3C members who participate](http://www.w3.org/2000/09/dbwg/det
 Work Mode
 ---------
 
-The work done by the group is carried out on our [publicly archived
+The work done by the group is primarily carried out on our [publicly archived
 mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/)
-<public-web-mobile@w3.org>. In addition there will be a number of face to face meetings.
+<public-web-mobile@w3.org>. Additionally, we hold [teleconferences](#teleconferences) to progress our work and we will hold a number of [face to face meetings](#f2fmeetings).
 
 Action items and issues are tracked in the [group's tracker](http://www.w3.org/Mobile/IG/track/).
 
@@ -112,12 +118,14 @@ list](http://lists.w3.org/Archives/Member/member-web-mobile/)
 Meetings<a id="meetings"></a>
 --------
 
+### Teleconferences<a id="teleconferences"></a>
+
 Our second teleconference will be on Thursday October 10 at 1300 UTC. The [agenda and details of how to join the call](http://lists.w3.org/Archives/Public/public-web-mobile/2013Sep/0133.html) have been published.
 
 ### Minutes
 * [Sep 25](http://www.w3.org/2013/09/25-webmob-minutes.html): IG goals, Modus Operandi, Closing the Gap report, Mobile roadmap, Taxonomy document
 
-### Face to face meetings
+### Face to face meetings<a id="f2fmeetings"></a>
 
 We plan to meet on Thursday and Friday (14th and 15th Nov) at [TPAC](http://www.w3.org/2013/11/TPAC/): [preliminary agenda](http://www.w3.org/wiki/Mobile/TPAC_Face-to-Face).
 
