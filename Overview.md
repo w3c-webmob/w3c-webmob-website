@@ -121,9 +121,10 @@ Meetings<a id="meetings"></a>
 
 ### Teleconferences<a id="teleconferences"></a>
 
-Our second teleconference will be on Thursday October 10 at 1300 UTC. The [agenda and details of how to join the call](http://lists.w3.org/Archives/Public/public-web-mobile/2013Sep/0133.html) have been published.
+Our third teleconference will be the week of October 21st: please fill the [scheduling survey](http://doodle.com/cxeyebyhet9s69us) before October 18.
 
 ### Minutes
+* [Oct 10](http://www.w3.org/2013/10/10-webmob-minutes.html): Closing the Gap report, TPAC agenda
 * [Sep 25](http://www.w3.org/2013/09/25-webmob-minutes.html): IG goals, Modus Operandi, Closing the Gap report, Mobile roadmap, Taxonomy document
 
 ### Face to face meetings<a id="f2fmeetings"></a>
