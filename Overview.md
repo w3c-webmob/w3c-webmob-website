@@ -13,11 +13,7 @@ development*.
 Current Status
 --------------
 
-We're working on the work plan for the group. At the moment this involves 
-arranging regular teleconferences, planning deliverables and preparing for an initial face to face meeting - at
-W3C TPAC in China in November (see [Meetings](#meetings)).
-
-Please follow progress and [participate](#participate) by joining the [public mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/).
+To track or take part to our ongoing work, see our [work page](http://www.w3.org/wiki/Mobile/Work), and join the [public mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/).
 
 Documents under discussion:
 
