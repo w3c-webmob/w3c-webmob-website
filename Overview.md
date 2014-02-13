@@ -22,17 +22,7 @@ Please follow progress and [participate](#participate) by joining the [public ma
 Documents under discussion:
 
 - [Taxonomy of Mobile Application Platforms](http://w3c-webmob.github.io/apps-taxonomy/taxonomy.html) - [Github repo](https://github.com/w3c-webmob/apps-taxonomy)
-- Closing the Gap with Native, Gap Analysis - [Github repo](https://github.com/w3c-webmob/gap-analysis)
-
-    A set of documents which together provide an analysis based on the earlier work of the [Closing the Gap with Native](http://www.w3.org/wiki/Closing_the_gap_with_native) Headlight Project
-
-    - [Comparison Framework of Mobile App Approaches from a UX perspective](http://w3c-webmob.github.io/gap-analysis/ux-comparison-framework.html)
-    - [Gap analysis of Web Apps from a UX perspective](http://w3c-webmob.github.io/gap-analysis/ux-webapps.html)
-    - [Closing the UX Gap](http://w3c-webmob.github.io/gap-analysis/ux-actions.html)
-    - [Comparison Framework of Mobile App Approaches from a provider perspective](http://w3c-webmob.github.io/gap-analysis/provider-comparison-framework.html)
-    - [Gap analysis of Web Apps from a provider perspective](http://w3c-webmob.github.io/gap-analysis/provider-webapps.html)
-    - [Closing the Gap from a provider perspective](http://w3c-webmob.github.io/gap-analysis/provider-actions.html)
-
+- [Closing the Gap with Native, Gap Analysis](http://w3c-webmob.github.io/gap-analysis/) - [Github repo](https://github.com/w3c-webmob/gap-analysis)
 - [Clarification of the Webmob Charter, in respect of the word "mobile"](http://w3c-webmob.github.io/w3c-webmob-what-is-mobile/note.html) - [Github repo](https://github.com/w3c-webmob/w3c-webmob-what-is-mobile/)
 - [Community-maintained list of relevant articles and references](http://www.w3.org/wiki/Mobile/articles)
 - [Use cases and requirements for Network Information](https://github.com/w3c-webmob/netinfo)
