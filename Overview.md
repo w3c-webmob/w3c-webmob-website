@@ -35,6 +35,9 @@ Documents under discussion:
 
 - [Clarification of the Webmob Charter, in respect of the word "mobile"](http://w3c-webmob.github.io/w3c-webmob-what-is-mobile/note.html) - [Github repo](https://github.com/w3c-webmob/w3c-webmob-what-is-mobile/)
 - [Community-maintained list of relevant articles and references](http://www.w3.org/wiki/Mobile/articles)
+- [Use cases and requirements for Network Information](https://github.com/w3c-webmob/netinfo)
+- [Use Cases and Requirements for Installable Webapps](https://github.com/w3c-webmob/installable-webapps)
+- [Review of permissions / user consent across Web APIs](https://github.com/dontcallmedom/web-permissions-req)
 
 Background
 ----------
@@ -62,12 +65,9 @@ especially to help to develop the Web's inherent strengths, especially in respec
 Deliverables
 ------------
 
-Planned deliverables:
+In addition to the documents under discussion mentioned above, our charter has the following planned deliverables:
 
--   [Core Mobile Web Platform 2012](http://coremob.github.io/coremob-2012/FR-coremob-20130131.html) Deployment Status
--   [Standards for Web Applications on Mobile](http://www.w3.org/Mobile/mobile-web-app-state/): current state and roadmap
--   New versions of Core Mobile Web Platform report
--   Gap analysis
+-   New versions of Core Mobile Web Platform report: this will more likely take the shape of one or several dashboards to track progress
 -   Use cases and scenarios for context-relevant user experiences
 -   Multi-device and cross-device user experiences on the Web
 -   Usability and Efficiency Considerations for the Web on Mobile
