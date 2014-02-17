@@ -14,6 +14,7 @@ Current Status
 --------------
 
 To track or take part to our ongoing work:
+
 - see our **[work page](http://www.w3.org/wiki/Mobile/Work)** with our various task forces,
 -  join the **[public mailing list](http://lists.w3.org/Archives/Public/public-web-mobile/)**.
 
