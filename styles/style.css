@@ -8,14 +8,16 @@ body {
 	font-size: 90%;
 	line-height: 1.5em;
 	margin: 0 auto;
-	color: #444;
-	background: #eee;
+	color: #444444;
+	background-color: #eee;
+	background-image:url('../images/tile.jpg');
+	background-repeat:repeat;
 }
 
 h2, h3, h4 {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    	font-weight: 300;
-   	color: #444;
+   	color: #444444;
 }
 
 .content {
@@ -43,22 +45,26 @@ h2 {
 	color: #fff;
 }
 
-#join h2{ background: #FF9500 }
-#howwork h2{ background: #4CD964 }
-#meetings h2{ background: #007AFF }
-#contact h2{ background: #FF2D55 }
-#pubs h2{ background: #5856D6 }
+#join h2{ background: #889988 }
+#howwork h2{ background: #77aadd }
+#meetings h2{ background: #ccbbaa }
+#contact h2{ background: #b23339 }
+#pubs h2{ background: #e3c76b }
+#pubs h2{ background: #e3c76b }
+#wiki h2{ background: #2664a8 }
 
-#join a{ color: #FF5E3A }
-#join a:hover{ color: #FF9500 }
-#howwork a{ color: #0BD318 }
-#howwork a:hover{ color: #87FC70 }
-#meetings a{ color: #1D62F0 }
-#meetings a:hover{ color: #1AD6FD }
-#contact a{ color: #FF2A68 }
-#contact a:hover{ color: #FF5E3A }
-#pubs a{ color: #5856D6 }
-#pubs a:hover{ color: #C644FC }
+#join a{ color: #889988 }
+#join a:hover{ color: #889988 }
+#howwork a{ color: #77aadd }
+#howwork a:hover{ color: #77aadd }
+#meetings a{ color: #ccbbaa }
+#meetings a:hover{ color: #ccbbaa }
+#contact a{ color: #b23339 }
+#contact a:hover{ color: #b23339 }
+#pubs a{ color: #e3c76b }
+#pubs a:hover{ color: #e3c76b }
+#wiki a{ color: #2664a8 }
+#wiki a:hover{ color: #2664a8 }
 
 #joinbuttons{
 	margin: 10px 0;
@@ -73,7 +79,7 @@ h2 {
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
 	border-radius:8px;
-	border:2px solid #ff9500;
+	border:2px solid #889988;
 	display:inline-block;
 	cursor:pointer;
 	color: #444;
@@ -84,7 +90,7 @@ h2 {
 }
 
 #join .go:hover {
-	background: #ff9500;
+	background: #889988;
 	color: #fff;
 }
 
@@ -117,19 +123,64 @@ br{
 	padding: 10px;
 }
 
-#header {
-  padding: 0.8em;
+/*#header {
   color: white;
   background-image: url("../images/background.jpg");
   background-size: cover;
   height: 50%;
-  padding: 40px 5%;
+  
 }
 
-#colorbar{
-	height: 20px;
+*/
+
+#headercontainer{
+	height: 300px;
 	width: 100%;
-	background-color: red;
+}
+
+#headlinecontainer{
+	margin-top: -200px;
+	z-index: 2;
+	position: relative;
+	width: 50%;
+	float: right;
+}
+
+#header {
+	background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-image: url(../images/background.jpg); 
+    /*padding: 40px 5%;*/
+}
+#header:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    z-index: 1;
+    right: 0px;
+	background-position-x: -100%;
+    background-image: url(../images/background.jpg); 
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+    opacity: 0.95;
+}
+
+
+#colorbar ul li:nth-child(1), #colorbar ul li:nth-child(6) { background-color: #889988 }
+#colorbar ul li:nth-child(2), #colorbar ul li:nth-child(7) { background-color: #77aadd }
+#colorbar ul li:nth-child(3), #colorbar ul li:nth-child(8) { background-color: #ccbbaa }
+#colorbar ul li:nth-child(4), #colorbar ul li:nth-child(9) { background-color: #b23339 }
+#colorbar ul li:nth-child(5), #colorbar ul li:nth-child(10) { background-color: #e3c76b }
+
+#colorbar{
+	height: 10px;
+	width: 100%;
 	margin-bottom: 10px;
 }
 
@@ -140,21 +191,10 @@ br{
 }
 
 #colorbar ul li {
-	height: 20px;
+	height: 10px;
 	width: 10%;
 	float: left;
 }
-
-#colorbar ul li:nth-child(6) { background-color: #FF3B30 }
-#colorbar ul li:nth-child(8) { background-color: #FF9500 }
-#colorbar ul li:nth-child(7) { background-color: #FFCC00 }
-#colorbar ul li:nth-child(2) { background-color: #4CD964 }
-#colorbar ul li:nth-child(9) { background-color: #34AADC }
-#colorbar ul li:nth-child(10) { background-color: #007AFF }
-#colorbar ul li:nth-child(4) { background-color: #5856D6 }
-#colorbar ul li:nth-child(3) { background-color: #FF2D55 }
-#colorbar ul li:nth-child(1) { background-color: #8E8E93 }
-#colorbar ul li:nth-child(5) { background-color: #C7C7CC }
 
 
 #headline h1, #headline h2, #blurb h3{
@@ -199,7 +239,7 @@ br{
     }
 
     #header {
-      padding: 80px 5%;
+      /*padding: 80px 5%;*/
     }
 
     .two-col {
