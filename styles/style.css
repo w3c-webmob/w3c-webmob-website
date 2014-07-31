@@ -1,3 +1,8 @@
+@font-face {
+    font-family: nexa;
+    src: url(../styles/fonts/Nord/Nord_Light.otf);
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -12,6 +17,12 @@ body {
 	background-color: #eee;
 	background-image:url('../images/tile.jpg');
 	background-repeat:repeat;
+}
+
+h1, h1 a{
+	font-family: nexa;
+	font-size: 68px;
+	font-weight: normal;
 }
 
 h2, h3, h4 {
