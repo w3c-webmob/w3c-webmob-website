@@ -1,5 +1,5 @@
 @font-face {
-    font-family: nexa;
+    font-family: nord;
     src: url(../styles/fonts/Nord/Nord_Light.otf);
 }
 
@@ -19,14 +19,30 @@ body {
 	background-repeat:repeat;
 }
 
-h1, h1 a{
-	font-family: nexa;
-	font-size: 68px;
+
+#headline h1, #headline h2, #blurb h3{
+  text-align: center;
+  color: #fff;
+}
+
+#headline h1 a{
+	text-decoration: none;
+	color: #fff;
+	font-family: nord;
 	font-weight: normal;
 }
 
+#headline h1{
+	background-color: #000;
+	line-height: 1;
+	font-size: 68px;
+	padding-top: 15px;
+	width: 410px;
+	margin: auto;
+}
+
 h2, h3, h4 {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: nord, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    	font-weight: 300;
    	color: #444444;
 }
@@ -166,18 +182,6 @@ br{
 	height: 10px;
 	width: 10%;
 	float: left;
-}
-
-
-#headline h1, #headline h2, #blurb h3{
-  text-align: center;
-  background: none;
-  color: #fff;
-}
-
-#headline h1 a{
-	text-decoration: none;
-	color: #fff;
 }
 
 #footer {
