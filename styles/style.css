@@ -20,22 +20,16 @@ body {
 }
 
 
-#headline h1, #headline h2, #blurb h3{
+#headline h1, #headline h2{
   text-align: right;
   color: #fff;
 
 }
 
 #headline h2{
-  font-size: 1.2em;
+  font-size: 1em;
   text-shadow: 1px 1px 4px #222;
-  margin-bottom: 5px;
-}
-
-#blurb h3{
-  font-size: 0.9em;
-  text-shadow: 1px 1px 8px #222;
-  margin-top: 0px;
+  margin-top: 5px;
 }
 
 #headline h1 a{
@@ -50,6 +44,7 @@ body {
 
 #headline h1{
 	line-height: 1;
+	margin-bottom: 0px;
 }
 
 h2, h3, h4 {
@@ -58,19 +53,32 @@ h2, h3, h4 {
    	color: #444444;
 }
 
+.togglebutton {
+
+}
+
 .content {
 	background: #fff;
-	padding-bottom: 20px;
+	padding: 10px 10px 20px 10px;
+	margin-bottom: 20px;
+	display: none;
 }
 
-.content p, .content h3 {
-	margin: 10px;
+section {
+	margin-bottom: 10px;
 }
 
-.content h2 {
+.content p {
+	margin-top: 0px;
+}
+
+section h2 {
 	margin: 0px;
 	padding: 10px;
-	margin: 20px 0;
+}
+
+section h2 a, section h2 a:hover{
+	color: #fff;
 }
 
 h2 {
@@ -83,16 +91,16 @@ h2 {
 /* #yellow h2{ background: #e3c76b }  not used atm */
 #meetings h2{ background: #2664a8 }
 
-#join a{ color: #889988 }
-#join a:hover{ color: #889988 }
-#howwork a{ color: #77aadd }
-#howwork a:hover{ color: #77aadd }
-#contact a{ color: #b23339 }
-#contact a:hover{ color: #b23339 }
+#join .content a{ color: #889988 }
+#join .content a:hover{ color: #889988 }
+#howwork .content a{ color: #77aadd }
+#howwork .content a:hover{ color: #77aadd }
+#contact .content a{ color: #b23339 }
+#contact .content a:hover{ color: #b23339 }
 /* #pubs a{ color: #e3c76b } not used atm */
 /* #pubs a:hover{ color: #e3c76b } not used atm */
-#meetings a{ color: #2664a8 }
-#meetings a:hover{ color: #2664a8 }
+#meetings .content a{ color: #2664a8 }
+#meetings .content a:hover{ color: #2664a8 }
 
 #joinbuttons{
 	margin: 10px 0;
@@ -170,7 +178,7 @@ br{
 #colorbar{
 	height: 10px;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 #colorbar ul{
@@ -245,22 +253,30 @@ br{
 		font-size: 2em;
 	}
 
-	#headline h1, #headline h2, #blurb h3{
+	#headline h1, #headline h2{
 	  text-align: center;
 	}
 
 	#headline h2{
-	  font-size: 1.4em;
+	  font-size: 1.2em;
 	}
 
-	#blurb h3{
-	  font-size: 1em;
+	section h2 {
+		margin: 0 10px;
+	}
+
+	.content {
+		display: block;
+	}
+
+	.togglebutton.fa {
+		display: none;
 	}
 
 }
 
 
-@font-face {
+/*@font-face {
     font-family: 'Proxima Nova';
     src: url('_fonts/proximanova-reg.eot');
     src: url('_fonts/proximanova-reg.eot?#iefix') format('embedded-opentype'),
@@ -278,5 +294,5 @@ br{
          url('_fonts/proximanova-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-}
+}*/
 

@@ -5,10 +5,34 @@
          <meta charset="utf-8">
          <title>W3C Webmob</title>
          <link rel="stylesheet" href="styles/style.css" media="only all">
+         <link rel="stylesheet" href="styles/font-awesome-4.2.0/css/font-awesome.min.css" media="only all">
          <meta name="description" content="Our mission is to accelerate the development of web technology so that it becomes a compelling platform for mobile applications and the obvious choice for cross platform development.">
          <link href="img/favicon.ico" rel="icon">
+
+         <script type="text/javascript">
+        <!--
+            function toggle_visibility(elementid, buttonid) {
+              console.log(buttonid);
+               var b = document.getElementById(buttonid);
+               var e = document.getElementById(elementid);
+
+               if(e.style.display == 'block'){
+                  e.style.display = 'none';
+                  b.className = b.className.replace( /(?:^|\s)fa-caret-square-o-up(?!\S)/g , ' fa-caret-square-o-down' )
+                }
+               else
+                {
+                  e.style.display = 'block';
+                  b.className = b.className.replace( /(?:^|\s)fa-caret-square-o-down(?!\S)/g , ' fa-caret-square-o-up' )
+                }
+            }
+        //-->
+        </script>
+
       </head>
       <body>
+
+      <!--Web &#38; Mobile Interest Group-->
 
       <div id="headereffectcontainer">
         <div id="headereffect"></div>
@@ -17,10 +41,7 @@
           <div class="container">
             <div id="headline">
               <h1><a href="/">W3C WebMob</a></h1>
-              <h2>Web &#38; Mobile Interest Group</h2>
-            </div>
-            <div id="blurb">
-              <h3>Making the web platform awesome for mobile.</h3>
+              <h2>Making the web platform awesome for mobile.</h2>
             </div>
           </div>
         </div>
@@ -42,9 +63,12 @@
         <div id="main">
 
           <section class="two-col" id="join">
-            <div class="content">
-              <h2>Join Us!</h2>
+            <h2>
+              Join Us! 
+              <a class="togglebutton fa fa-caret-square-o-down" href="#" id="jointoggle" onclick="toggle_visibility('joincontent','jointoggle');"></a>
+            </h2>
 
+            <div class="content" id="joincontent">
               <p>If you want to get started working on WebMob projects then join the mailing list or visit our Github page and fork the repos!</p>
 
               <div id="joinbuttons">
@@ -61,8 +85,12 @@
           </section>
 
           <section class="two-col" id="howwork">
-            <div class="content">
-              <h2>How We Work</h2>
+            <h2>
+              How We Work
+              <a class="togglebutton fa fa-caret-square-o-down" href="#" id="howweworktoggle" onclick="toggle_visibility('howweworkcontent','howweworktoggle');"></a>
+            </h2>
+
+            <div class="content" id="howweworkcontent"> 
               <h3>Define a Problem through Use Cases</h3>
               <p>There are some things that native apps can do that the web can't. We identify these things and then document the use cases and requirements. These use cases go on to support new standards on the web platform. </p>
               <p>Example: <a href="http://w3c-webmob.github.io/installable-webapps/">Installable Web Apps</a>
@@ -77,8 +105,11 @@
           <br>
 
           <section class="two-col" id="meetings">
-            <div class="content">
-              <h2>Meetings</h2>
+            <h2>
+              Meetings
+              <a class="togglebutton fa fa-caret-square-o-down" href="#" id="meetingstoggle" onclick="toggle_visibility('meetingscontent','meetingstoggle');"></a>
+            </h2>
+            <div class="content" id="meetingscontent">
               <p>We have one teleconference every month where we talk about our current work and new items we want to tackle. All Webmob <a href="http://www.w3.org/2000/09/dbwg/details?group=65406&public=1">participants</a> are invited, details below:</p>
               <ul class="blank_ul">
                 <li>Day: Monthly, 2nd or 3rd Wednesday </li>
@@ -93,8 +124,11 @@
           </section>
 
            <section class="two-col" id="contact">
-            <div class="content">
-              <h2>Keeping in Contact</h2>
+            <h2>
+              Keeping in Contact
+              <a class="togglebutton fa fa-caret-square-o-down" href="#" id="contacttoggle" onclick="toggle_visibility('contactcontent','contacttoggle');"></a>
+            </h2>
+            <div class="content" id="contactcontent">
               <p>We regularly use a lot of methods to keep contact. Find us at all the places below or on our teleconfence meeting in the <a href="#meetings">Meetings</a> section.</p>
               <ul class="blank_ul">
                 <li>Mailing List</li>
