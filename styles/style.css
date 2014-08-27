@@ -21,37 +21,46 @@ body {
 
 
 #headline h1, #headline h2, #blurb h3{
-  text-align: center;
+  text-align: right;
   color: #fff;
+
+}
+
+#headline h2{
+  font-size: 1.2em;
+  text-shadow: 1px 1px 4px #222;
+  margin-bottom: 5px;
+}
+
+#blurb h3{
+  font-size: 0.9em;
+  text-shadow: 1px 1px 8px #222;
+  margin-top: 0px;
 }
 
 #headline h1 a{
 	text-decoration: none;
+	background-color: #000;
 	color: #fff;
 	font-family: nord;
+	font-size: 1.3em;
 	font-weight: normal;
+	padding: 10px 10px 0 10px;
 }
 
 #headline h1{
-	background-color: #000;
 	line-height: 1;
-	font-size: 68px;
-	padding-top: 15px;
-	width: 410px;
-	margin: auto;
 }
 
 h2, h3, h4 {
-	font-family: nord, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    	font-weight: 300;
    	color: #444444;
 }
 
 .content {
 	background: #fff;
-	margin: 20px 10px;
 	padding-bottom: 20px;
-  	box-shadow: 1px 1px 1px 0.5px #ccc;
 }
 
 .content p, .content h3 {
@@ -61,11 +70,7 @@ h2, h3, h4 {
 .content h2 {
 	margin: 0px;
 	padding: 10px;
-}
-
-
-h2, h3, h4 {
-	font-weight: 300;
+	margin: 20px 0;
 }
 
 h2 {
@@ -74,24 +79,20 @@ h2 {
 
 #join h2{ background: #889988 }
 #howwork h2{ background: #77aadd }
-#meetings h2{ background: #ccbbaa }
 #contact h2{ background: #b23339 }
-#pubs h2{ background: #e3c76b }
-#pubs h2{ background: #e3c76b }
-#wiki h2{ background: #2664a8 }
+/* #yellow h2{ background: #e3c76b }  not used atm */
+#meetings h2{ background: #2664a8 }
 
 #join a{ color: #889988 }
 #join a:hover{ color: #889988 }
 #howwork a{ color: #77aadd }
 #howwork a:hover{ color: #77aadd }
-#meetings a{ color: #ccbbaa }
-#meetings a:hover{ color: #ccbbaa }
 #contact a{ color: #b23339 }
 #contact a:hover{ color: #b23339 }
-#pubs a{ color: #e3c76b }
-#pubs a:hover{ color: #e3c76b }
-#wiki a{ color: #2664a8 }
-#wiki a:hover{ color: #2664a8 }
+/* #pubs a{ color: #e3c76b } not used atm */
+/* #pubs a:hover{ color: #e3c76b } not used atm */
+#meetings a{ color: #2664a8 }
+#meetings a:hover{ color: #2664a8 }
 
 #joinbuttons{
 	margin: 10px 0;
@@ -225,15 +226,37 @@ br{
 
 	.content {
 		background: #fff;
-		margin: 10px;
+		margin: 0 10px;
 		padding-bottom: 20px;
-	  	box-shadow: 1px 1px 1px 0.5px #ccc;
 	}
 
 	br {
 		display: block;
 		clear: both;
 	}
+
+	#headline h1{
+		margin: auto;
+		text-align: center;
+	}
+
+	#headline h1 a{
+		padding: 15px 15px 5px;
+		font-size: 2em;
+	}
+
+	#headline h1, #headline h2, #blurb h3{
+	  text-align: center;
+	}
+
+	#headline h2{
+	  font-size: 1.4em;
+	}
+
+	#blurb h3{
+	  font-size: 1em;
+	}
+
 }
 
 
