@@ -134,7 +134,7 @@ footer{
 
 .buttonlist{
 	list-style-type: none;
-	padding-bottom: .4em;
+	padding-bottom: .7em;
 }
 
 .buttonlist > li{
@@ -143,24 +143,36 @@ footer{
 }
 
 .inlinedefs, .docslist {
-	width: 90%;
 	margin: auto;
 	padding: 1em 0;
+	width: 90%;
 }
 
 .inlinedefs > dt, .inlinedefs > dd {
 	line-height: 2.2em;
 	display: inline-block;
+	margin: .5em 0;
 }
 
 .inlinedefs > dt{
-	vertical-align: middle;
-	width: 10%;
+	width: 16%;
+	min-width: 3.3em;
 	text-align: center;
 }
 
+.inlinedefs > dt > a {
+	display: inline-block;
+	width: 2.3em;
+	border-radius: 0.625em 0.625em;
+  background-color: rgb(214, 208, 198);
+}
+
+img {
+	vertical-align: middle;
+}
+
 .inlinedefs > dd {
-	width: 85%
+	width: 80%;
 }
 
 .docslist {
