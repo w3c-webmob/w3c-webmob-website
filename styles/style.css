@@ -204,6 +204,14 @@ br{
 	font-size: 2em;
 }
 
+#photographer {
+	text-align: right;
+}
+
+#photographer a {
+	color: #fff;
+}
+
 @media (min-width: 600px) {
 
     #main {
