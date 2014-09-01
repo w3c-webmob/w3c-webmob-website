@@ -33,6 +33,9 @@ header{
 	color: white;
   padding: .5em;
   background-image: url("/images/background_1x.jpg");
+  background-image: -webkit-image-set(
+  						 url("/images/background_1x.jpg") 1x,
+               url("/images/background_2x.jpg") 2x);
   background-image: image-set(
   						 url("/images/background_1x.jpg") 1x,
                url("/images/background_2x.jpg") 2x);
