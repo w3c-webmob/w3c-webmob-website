@@ -87,10 +87,6 @@ section {
 		background-color: rgb(100, 91, 82);
 }
 
-.fancypill .inactive{
-	background-color: rgb(227, 221, 214);
-}
-
 .fancypill a{
 	color: rgb(249, 245, 236);
 }
