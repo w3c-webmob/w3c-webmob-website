@@ -1,159 +1,115 @@
 <!doctype html>
-    <html>
-      <head>
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <meta charset="utf-8">
-         <title>W3C Webmob</title>
-         <link rel="stylesheet" href="styles/style.css" media="only all">
-         <link rel="stylesheet" href="styles/font-awesome-4.2.0/css/font-awesome.min.css" media="only all">
-         <meta name="description" content="Our mission is to accelerate the development of web technology so that it becomes a compelling platform for mobile applications and the obvious choice for cross platform development.">
-         <link href="img/favicon.ico" rel="icon">
+<html>
 
-         <script type="text/javascript">
-        <!--
-            function toggle_visibility(elementid, buttonid) {
-              console.log(buttonid);
-               var b = document.getElementById(buttonid);
-               var e = document.getElementById(elementid);
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/font-awesome-4.2.0/css/font-awesome.min.css">
+  <link href="images/webmob.svg" rel="icon" sizes="any">
+  <title>W3C Webmob</title>
+</head>
 
-               if(e.style.display == 'block'){
-                  e.style.display = 'none';
-                  b.className = b.className.replace( /(?:^|\s)fa-caret-square-o-up(?!\S)/g , ' fa-caret-square-o-down' )
-                }
-               else
-                {
-                  e.style.display = 'block';
-                  b.className = b.className.replace( /(?:^|\s)fa-caret-square-o-down(?!\S)/g , ' fa-caret-square-o-up' )
-                }
-            }
-        //-->
-        </script>
+<body>
+  <header>
+    <div>
+      <svg id="battery" width="73.125px" height="40.125px" viewBox="0 0 195 107" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <path d="M179,81 L179,107 L0,107 L0,0 L179,0 L179,29 L195,29 L195,81 L179,81 Z M24,25 L24,83 L155,83 L155,25 L24,25 Z" stroke="white" fill="white"></path>
+          <path d="M34,34 L34,72 L105.042969,72 L67.1738281,34 L34,34 Z" id="Rectangle-4" stroke="white" fill="white"></path>
+        </g>
+      </svg>
+    </div>
+    <h1>W3C <abbr title="Web &#38; Mobile Interest Group">WebMob</abbr></h1>
+  </header>
+  <main>
+    <section id="join">
+      <p>Join our community of developers, browser vendors, and mobile carriers. We work together to make the web competitive on mobile.
+      </p>
+      <ul class="buttonlist fancypill">
+        <li>
+          <a href="https://github.com/w3c-webmob/">
+					GitHub
+				</a>
+        </li>
+        <li><a href="mailto:public-web-mobile-request&#64;w3.org?subject=subscribe&amp;body=Subscribe me to the WebMob list!">Mailing List</a>
+        </li>
+      </ul>
+    </section>
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul class="docslist">
+        <li>
+          <a href="http://www.w3.org/Mobile/mobile-web-app-state/">
+            <img src="images/document.svg" width="16" height="16" alt="">Standards for web applications on mobile.
+          </a>
+        </li>
+        <li>
+          <a href="https://w3c-webmob.github.io/wake-lock-use-cases/">
+            <img src="images/document.svg" width="16" height="16" alt="">Wake lock use cases.</a>
+        </li>
+        <li>
+          <a href="http://w3c-webmob.github.io/netinfo-usecases/">
+            <img src="images/document.svg" width="16" height="16" alt="">Network information use cases.</a>
+        </li>
+        <li>
+          <a href="https://github.com/w3c-webmob/installable-webapps/blob/gh-pages/ios_standalone/README.md">
+            <img src="images/document.svg" width="16" height="16" alt="">Standalone apps on iOS.</a>
+        </li>
+        <li>
+          <a href="http://w3c-webmob.github.io/installable-webapps/">
+            <img src="images/document.svg" width="16" height="16" alt="">Use cases for installable web apps.</a>
+        </li>
+      </ul>
+    </section>
 
-      </head>
-      <body>
-
-      <!--Web &#38; Mobile Interest Group-->
-
-      <div id="headereffectcontainer">
-        <div id="headereffect"></div>
-      </div>
-        <div id="header">
-          <div class="socialbuttons">
-            <a href="http://twitter.com/w3c_webmob"><i class="fa fa-twitter"></i></a>
-            <a href="https://github.com/w3c-webmob"><i class="fa fa-github"></i></a>
-            <a href="http://lists.w3.org/Archives/Public/public-web-mobile/"><i class="fa fa-envelope-o"></i></a>
-          </div>
-          <div id="headline">
-            <a href="/"><h1>W3C WebMob</h1></a>
-            <h2>Making the web platform awesome for mobile.</h2>
-          </div>
-          <div id="logo">
-            <canvas id="batteryplaceholder"></canvas>
-          </div>
-          <div id="photographer">
-            <a href="https://www.flickr.com/photos/sinkdd/" target="_blank">Photo: Shinichi Higashi</a>
-          </div>
-        </div>
-        <div id="colorbar">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-
-        <div id="main">
-
-          <section class="two-col" id="join">
-            <h2>
-              Join Us! 
-              <a class="togglebutton fa fa-chevron-down" href="#" id="jointoggle" onclick="toggle_visibility('joincontent','jointoggle');"></a>
-            </h2>
-
-            <div class="content" id="joincontent">
-              <p>If you want to get started working on WebMob projects then join the mailing list or visit our Github page and fork the repos!</p>
-
-              <div id="joinbuttons">
-                <a href="http://lists.w3.org/Archives/Public/public-web-mobile/"><i class="fa fa-envelope-o"></i> Join the Mailing List</a><br/>
-                <a href="https://github.com/w3c-webmob/" class="go"><i class="fa fa-github"></i> Fork our Github Repos</a>
-              </div>
-
-              <h3>Want to do more?</h3>
-              <p>Become a member of the group to help us decide what work to do next, lead task forces and help other W3C Groups with their mobile-specific work then become a full member of the group!</p>
-              <p><a href="http://www.w3.org/Consortium/Member/List">W3C Member</a>? Get your <a href="http://www.w3.org/2004/01/pp-impl/65406/instructions">AC Rep</a> to sign you up!</p>
-              <p>Not a W3C member? Find out about membership <a href="http://www.w3.org/Consortium/join">here</a>.</p>
-              <!-- invited expert? -->
-            </div>
-          </section>
-
-          <section class="two-col" id="howwork">
-            <h2>
-              How We Work
-              <a class="togglebutton fa fa-chevron-down" href="#" id="howweworktoggle" onclick="toggle_visibility('howweworkcontent','howweworktoggle');"></a>
-            </h2>
-
-            <div class="content" id="howweworkcontent"> 
-              <h3>Define a Problem through Use Cases</h3>
-              <p>There are some things that native apps can do that the web can't. We identify these things and then document the use cases and requirements. These use cases go on to support new standards on the web platform. </p>
-              <p><i class="fa fa-file"></i> Example: <a href="http://w3c-webmob.github.io/installable-webapps/">Installable Web Apps</a>
-              </p>
-              <h3>Github</h3>
-              <p>We do all our work on Github. Github makes it easy to track and log issues and everyone can contribute. Everyone can browse our work on the main <a href="https://github.com/w3c-webmob/">Webmob Github Page</a> and start forking repositories and sending in pull requests. </p>
-              <p><i class="fa fa-file"></i> Example: <a href="https://github.com/w3c-webmob/screen-wake-use-cases">Screen Wake Use Cases</a>
-              </p>
-            </div>
-          </section>
-
-          <br>
-
-          <section class="two-col" id="meetings">
-            <h2>
-              Meetings
-              <a class="togglebutton fa fa-chevron-down" href="#" id="meetingstoggle" onclick="toggle_visibility('meetingscontent','meetingstoggle');"></a>
-            </h2>
-            <div class="content" id="meetingscontent">
-              <p>We have one teleconference every month where we talk about our current work and new items we want to tackle. All Webmob <a href="http://www.w3.org/2000/09/dbwg/details?group=65406&public=1">participants</a> are invited, details below:</p>
-              <ul class="blank_ul">
-                <li><i class="fa fa-sun-o"></i> Monthly, 2nd or 3rd Wednesday </li>
-                <li><i class="fa fa-clock-o"></i> 2pm UTC</li>
-                <li><i class="fa fa-phone"></i> +1-617-761-6200 or sip:zakim@voip.w3.org</li>
-                <li>Conference Code: 932662 ("WEBMOB")</li>
-                <li>IRC: #webmob</li>
-              </ul>
-              <p>Check the wiki <a href="https://www.w3.org/wiki/Mobile/Meetings">Meetings Page</a> for more details and <a href="https://docs.google.com/document/d/1hbuBA5SZxFgmD09_k3woMtyHU7jNJ91es__XYNRdLe8/edit#">icalendar feed</a>!</p>
-            </div>
-          </section>
-
-           <section class="two-col" id="contact">
-            <h2>
-              Keeping in Contact
-              <a class="togglebutton fa fa-chevron-down" href="#" id="contacttoggle" onclick="toggle_visibility('contactcontent','contacttoggle');"></a>
-            </h2>
-            <div class="content" id="contactcontent">
-              <p>We regularly use a lot of methods to keep contact. Find us at all the places below or on our teleconfence meeting in the <a href="#meetings">Meetings</a> section.</p>
-              <p>W3C Webmob. Chairs: Marcos Caceres, Natasha Rooney. W3C Rep: Dom</p>
-              
-              
-            </div>
-          </section>
-
-          <br>
-
-        </div> <!-- end main -->
-
-        <div id="footer">
-          <div class="socialbuttons">
-            <a href="http://twitter.com/w3c_webmob"><i class="fa fa-twitter"></i></a>
-            <a href="https://github.com/w3c-webmob"><i class="fa fa-github"></i></a>
-            <a href="http://lists.w3.org/Archives/Public/public-web-mobile/"><i class="fa fa-envelope-o"></i></a>
-          </div>
-        </div>
-      </body>
-    </html>
+    <section>
+      <h2 id="meetings">Meetings</h2>
+      <dl class="inlinedefs">
+        <dt><a href="http://www.w3.org/Mobile/IG/teleconferences.ics">
+        	<img src="images/calendar.svg" width="16" height="16" alt="Date/Time:"></a></dt>
+        <dd>Monthly on Wed. 2pm UTC</dd>
+        <dt><a href="tel:+1-617-761-6200"><img width="16" height="16" src="images/phone.svg" alt="Phone:"></a></dt>
+        <dd>+1-617-761-6200 (932662)
+        </dd>
+        <dt>
+				<a href="sip:zakim@voip.w3.org">
+				<img width="16" height="16" src="images/voip.svg" alt="sip:">
+				</a>
+        </dt>
+        <dd>sip:zakim@voip.w3.org</dd>
+        <dt>
+        	<a href="irc://irc.w3.org:6665#webmob">
+        	<img src="images/irc.svg" width="16" height="16" alt="Date/Time:">
+          </a></dt>
+        <dd>irc.w3.org:6665#webmob
+        </dd>
+      </dl>
+    </section>
+  </main>
+  <footer>
+    <ul class="buttonlist">
+      <li>
+        <a href="https://twitter.com/w3c_webmob">
+          <img src="/images/twitter_white.svg" width="30" height="30" alt="Follow us on Twitter!">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/w3c-webmob/">
+          <img src="/images/github.svg" width="30" height="30" alt="Joing us on Github!">
+        </a>
+      </li>
+      <li>
+        <a href="https://w3.org">
+          <img src="/images/w3c_white.svg" height="30" alt="Join the W3C!">
+        </a>
+      </li>
+    </ul>
+    <section id="attributions">
+    <p><small>Header photo by <a href="https://www.flickr.com/photos/sinkdd/">Shinichi Higashi</a>, Icons: Document and VOIP by <a href="http://www.icons8.com" title="Icons8">Icons8</a>, Mail by <a href="http://RamiMcM.in" title="Rami McMin">Rami McMin</a>, Calendar and Chat by Freepik, Phone by <a href="http://www.zurb.com" title="Zurb">Zurb</a>, from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>. Header font is `nexa`, from <a href="www.fontfabric.com">www.fontfabric.com</a>.</small>
+    </p>
+  </section>
+  </footer>
+</body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</html>
