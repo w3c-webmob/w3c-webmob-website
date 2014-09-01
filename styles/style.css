@@ -32,7 +32,10 @@ header{
 	text-align: center;
 	color: white;
   padding: .5em;
-  background-image: url("../images/background.jpg");
+  background-image: url("/images/background_1x.jpg");
+  background-image: image-set(
+  						 url("/images/background_1x.jpg") 1x,
+               url("/images/background_2x.jpg") 2x);
   background-size: cover;
   background-position: 100% 30%;
   font-family: nord;
