@@ -3,7 +3,7 @@
   src: url("fonts/nexa/Nexa_Bold.otf");
 }
 
-html, body, p, h2, header, section, dt, dd, li, ul{
+html, body, p, h2, header, section, li, ul{
   margin: 0;
   padding: 0;
 }
@@ -43,6 +43,12 @@ header{
   background-position: 100% 30%;
   font-family: nord;
   font-size: 1em;
+}
+
+@media (min-width: 64em) {
+  header{
+      background-image: url("../images/background_2x.jpg")
+  }
 }
 
 header h1{
@@ -131,6 +137,7 @@ footer{
 .buttonlist{
   list-style-type: none;
   padding-bottom: .7em;
+  padding-top: 0px;
 }
 
 .buttonlist > li{
@@ -138,25 +145,18 @@ footer{
   padding: 0 1em;
 }
 
-.inlinedefs, .docslist{
-  margin: auto;
-  padding: 1em 0;
-  width: 90%;
-}
-
-.inlinedefs > dt, .inlinedefs > dd{
+ul{
+  padding: 1em 2.2em;
+  list-style-type: none;
   line-height: 2.2em;
-  display: inline-block;
-  margin: .5em 0;
 }
 
-.inlinedefs > dt{
-  width: 16%;
-  min-width: 3.3em;
+.interactivelist > li{
+  padding: .5em 0;
+}
+
+.interactivelist a{
   text-align: center;
-}
-
-.inlinedefs > dt > a{
   display: inline-block;
   width: 2.3em;
   border-radius: 0.625em 0.625em;
@@ -167,24 +167,27 @@ img{
   vertical-align: middle;
 }
 
-.inlinedefs > dd{
-  width: 80%;
-}
+.docslist, .interactivelist{
 
-.docslist{
-  list-style-type: none;
   line-height: 2em;
 }
 
-.docslist img{
-  padding: 0 4%;
-  vertical-align:  text-top;
-}
-
-.docslist li{
+.docslist > li, .linkslist > li{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  background-position: .9em 40%;
+  background-repeat: no-repeat;
+  padding-left: 2.3em;
+  background-size: 1em;
+}
+
+.docslist > li{
+  background-image: url("../images/document.svg");
+}
+
+.linkslist > li {
+  background-image: url("../images/link.svg");
 }
 
 main{
