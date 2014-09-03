@@ -1,201 +1,201 @@
-@font-face {
-    font-family: nord;
-    src: url("fonts/nexa/Nexa_Bold.otf");
+@font-face{
+  font-family: nord;
+  src: url("fonts/nexa/Nexa_Bold.otf");
 }
 
 html, body, p, h2, header, section, dt, dd, li, ul{
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html{
-	background-color: black;
+  background-color: black;
 }
 
 a{
   color: rgb(102, 93, 84);
-	text-decoration: none
+  text-decoration: none
 }
 
 abbr{
-	border: none;
+  border: none;
 }
 
-body {
-	font-family: Helvetica,Arial,sans-serif;
-	font-size: 16px;
+body{
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 16px;
   background: #2B2B2B;
   color: rgb(102, 93, 84);
 }
 
 header{
-	text-align: center;
-	color: white;
+  text-align: center;
+  color: white;
   padding: .5em;
   background-image: url("../images/background_1x.jpg");
   background-image: -webkit-image-set(
-						 url("../images/background_1x.jpg") 1x,
-	       url("../images/background_2x.jpg") 2x);
+   url("../images/background_1x.jpg") 1x,
+         url("../images/background_2x.jpg") 2x);
   background-image: image-set(
-						 url("../images/background_1x.jpg") 1x,
-	       url("../images/background_2x.jpg") 2x);
+   url("../images/background_1x.jpg") 1x,
+         url("../images/background_2x.jpg") 2x);
   background-size: cover;
   background-position: 100% 30%;
   font-family: nord;
-	font-size: 1em;
+  font-size: 1em;
 }
 
 header h1{
-	display: inline-block;
-	background-color: rgba(0,0,0,.6);
-	padding: .4em .2em .2em .2em;
+  display: inline-block;
+  background-color: rgba(0,0,0,.6);
+  padding: .4em .2em .2em .2em;
 }
 
 p, .fancypill{
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-section {
-	margin-bottom: 0.625em;
+section{
+  margin-bottom: 0.625em;
 }
 
 #join{
-	line-height: 1.5em;
-	text-align: center;
-	font-style: italic;
-	padding: 1.5em 0;
-	font-size: 1em;
-	font-weight: bold;
-	background-image: url("../images/logos.jpg");
+  line-height: 1.5em;
+  text-align: center;
+  font-style: italic;
+  padding: 1.5em 0;
+  font-size: 1em;
+  font-weight: bold;
+  background-image: url("../images/logos.jpg");
   background-size: contain;
 }
 
 .fancypill{
-	padding: 0;
-	margin: 0;
-	margin: auto;
-	text-align: center;
-	width: auto;
-	margin-top: 1.2em;
-	font-style: normal;
-	min-width: 45%;
+  padding: 0;
+  margin: 0;
+  margin: auto;
+  text-align: center;
+  width: auto;
+  margin-top: 1.2em;
+  font-style: normal;
+  min-width: 45%;
 }
 
 .fancypill > li{
-		width: 30%;
-		line-height: 2.875em;
-		background-color: rgb(100, 91, 82);
+  width: 30%;
+  line-height: 2.875em;
+  background-color: rgb(100, 91, 82);
 }
 
 .fancypill a{
-	color: rgb(249, 245, 236);
+  color: rgb(249, 245, 236);
 }
 
 .fancypill li:first-child{
-		border-radius: 0.625em 0 0 0.625em;
+  border-radius: 0.625em 0 0 0.625em;
 }
 .fancypill li:last-child{
-		border-radius:  0 0.625em 0.625em 0;
+  border-radius:  0 0.625em 0.625em 0;
 }
 
 section > p{
-	margin: 0 1em;
+  margin: 0 1em;
 }
 
-section > h2 {
-	font-size: 1em;
+section > h2{
+  font-size: 1em;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	color: rgb(94, 85, 76);
-	background-color: rgb(229, 222, 213);
-	padding: 0.625em;
-	border-bottom: 0.2em solid #e0d9ce;
+  color: rgb(94, 85, 76);
+  background-color: rgb(229, 222, 213);
+  padding: 0.625em;
+  border-bottom: 0.2em solid #e0d9ce;
 }
 
 footer{
-	 text-align: center;
+   text-align: center;
 }
 
 #attributions{
-	text-align: center;
-	font-size: .7em;
-	background-color: black;
-	color: rgb(200,200,200);
-	font-family: sans-serif;
-	padding-top: 1em;
+  text-align: center;
+  font-size: .7em;
+  background-color: black;
+  color: rgb(200,200,200);
+  font-family: sans-serif;
+  padding-top: 1em;
 }
 
 #attributions a{
-	color: rgb(200,200,200);
+  color: rgb(200,200,200);
 }
 
 .buttonlist{
-	list-style-type: none;
-	padding-bottom: .7em;
+  list-style-type: none;
+  padding-bottom: .7em;
 }
 
 .buttonlist > li{
-	display: inline-block;
-	padding: 0 1em;
+  display: inline-block;
+  padding: 0 1em;
 }
 
-.inlinedefs, .docslist {
-	margin: auto;
-	padding: 1em 0;
-	width: 90%;
+.inlinedefs, .docslist{
+  margin: auto;
+  padding: 1em 0;
+  width: 90%;
 }
 
-.inlinedefs > dt, .inlinedefs > dd {
-	line-height: 2.2em;
-	display: inline-block;
-	margin: .5em 0;
+.inlinedefs > dt, .inlinedefs > dd{
+  line-height: 2.2em;
+  display: inline-block;
+  margin: .5em 0;
 }
 
 .inlinedefs > dt{
-	width: 16%;
-	min-width: 3.3em;
-	text-align: center;
+  width: 16%;
+  min-width: 3.3em;
+  text-align: center;
 }
 
-.inlinedefs > dt > a {
-	display: inline-block;
-	width: 2.3em;
-	border-radius: 0.625em 0.625em;
+.inlinedefs > dt > a{
+  display: inline-block;
+  width: 2.3em;
+  border-radius: 0.625em 0.625em;
   background-color: rgb(214, 208, 198);
 }
 
-img {
-	vertical-align: middle;
+img{
+  vertical-align: middle;
 }
 
-.inlinedefs > dd {
-	width: 80%;
+.inlinedefs > dd{
+  width: 80%;
 }
 
-.docslist {
-	list-style-type: none;
-	line-height: 2em;
+.docslist{
+  list-style-type: none;
+  line-height: 2em;
 }
 
 .docslist img{
-	padding: 0 4%;
-	vertical-align:  text-top;
+  padding: 0 4%;
+  vertical-align:  text-top;
 }
 
 .docslist li{
-	white-space: nowrap;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 main{
-	background-color: rgb(250, 245, 236);
+  background-color: rgb(250, 245, 236);
 }
 
 main:before{
-	content: "";
-	display:block;
-	position: relative;
-	height: 1.5em;
+  content: "";
+  display:block;
+  position: relative;
+  height: 1.5em;
   background: linear-gradient(to right,  #ffffff 0%,#ffffff 6%,#94d9f2 6%,#94d9f2 13%,#f98d63 13%,#f98d63 19%,#f3ef7c 19%,#f3ef7c 25%,#2ebe9b 25%,#2ebe9b 31%,#9375dc 31%,#9375dc 37%,#faaca7 37%,#faaca7 44%,#3c87dc 44%,#3c87dc 50%,#8ec452 50%,#8ec452 56%,#fabc44 56%,#fabc44 63%,#d86bad 63%,#d86bad 69%,#d84e5a 69%,#d84e5a 75%,#f5f6d3 75%,#f5f6d3 81%,#7b6562 81%,#7b6562 88%,#424a54 88%,#424a54 94%,#030303 94%,#030303 100%);
   border-bottom: .5em solid rgb(200, 194, 183);
 }
