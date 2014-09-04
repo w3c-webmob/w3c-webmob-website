@@ -3,6 +3,11 @@
   src: url("fonts/nexa/Nexa_Bold.otf");
 }
 
+/*ie does not suppport main*/
+main {
+  display: block;
+}
+
 html, body, p, h2, header, section, li, ul{
   margin: 0;
   padding: 0;
