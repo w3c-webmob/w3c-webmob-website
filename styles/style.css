@@ -207,3 +207,11 @@ main:before{
   background: linear-gradient(to right,  #ffffff 0%,#ffffff 6%,#94d9f2 6%,#94d9f2 13%,#f98d63 13%,#f98d63 19%,#f3ef7c 19%,#f3ef7c 25%,#2ebe9b 25%,#2ebe9b 31%,#9375dc 31%,#9375dc 37%,#faaca7 37%,#faaca7 44%,#3c87dc 44%,#3c87dc 50%,#8ec452 50%,#8ec452 56%,#fabc44 56%,#fabc44 63%,#d86bad 63%,#d86bad 69%,#d84e5a 69%,#d84e5a 75%,#f5f6d3 75%,#f5f6d3 81%,#7b6562 81%,#7b6562 88%,#424a54 88%,#424a54 94%,#030303 94%,#030303 100%);
   border-bottom: .5em solid rgb(200, 194, 183);
 }
+
+.visuallyhidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
