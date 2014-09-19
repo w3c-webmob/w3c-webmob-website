@@ -219,20 +219,23 @@ header:after{
   margin: -1px; padding: 0; border: 0; 
 }
 
-section{
-    overflow: auto;
-    -webkit-transition: height .5s;
-          transition: height .5s;
+
+
+.accelerated{
+  overflow: hidden;
+  transition: height 1s;
+  transform: translate3d(0px, 0px, 1px);
 }
 
 section.collapsable{
   overflow: hidden;
-  height: 2.35em; 
+  height: 2.35em;
 }
+
 
 @media (min-width: 36em) {
     section.collapsable{
-      overflow: auto;
+      overflow: hidden;
       height: auto;
     }
     ul.multicol{

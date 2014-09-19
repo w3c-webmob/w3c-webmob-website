@@ -52,7 +52,7 @@
           </li>
         </ul>
       </section>
-      <section id="publications" class="collapsable">
+      <section id="publications" class="collapsable accelerated">
         <h2 class="opener">
           Publications
         </h2>
@@ -103,7 +103,7 @@
         </ul>
       </section>
       
-      <section class="collapsable">
+      <section class="collapsable accelerated">
         <h2 class= "opener" id="meetings">
           Meetings
         </h2>
@@ -128,7 +128,7 @@
           </li>
           <li>
             <a class="buttonlink" href="irc://irc.w3.org:6665#webmob">
-              <img src="images/irc.svg" width="16" height="16" alt="Date/Time:">
+              <img src="images/irc.svg" width="16" height="16" alt="IRC:">
             </a>
             irc.w3.org:6665#webmob
           </li>
@@ -140,7 +140,7 @@
           </li>
         </ul>
       </section>
-      <section class="collapsable">
+      <section class="collapsable accelerated">
         <h2 class="opener">
           Useful Resources
         </h2>
@@ -172,7 +172,7 @@
           </li>
           <li>
             <a href="mailto:dom@w3.org">
-              Team Contact (Dominique Hazael-Massieux).
+              Email team contact (Dominique Hazael-Massieux).
             </a>
           </li>
         </ul>
@@ -232,17 +232,38 @@ window.addEventListener("DOMContentLoaded", function(){
   
   for (var i = openers.length - 1; i >= 0; i--) {
     var opener = openers[i];
-    (mediaMatcher && mediaMatcher.matches) ?
-        opener.addEventListener("click", accordion)
-      : opener.parentElement.classList.toggle("collapsable");
+    if (mediaMatcher && mediaMatcher.matches) {
+      opener.addEventListener("click", accordion) 
+    }
   }
   
-  function accordion(){
+  mediaMatcher.addListener(function(ev){
+    //remove the explicit height
+    for (var i = openers.length - 1; i >= 0; i--) {
+      var opener = openers[i];
+      if (!ev.matches) {
+        if (opener.parentElement.style.height){
+          opener.parentElement.style.height = "";
+        }
+        opener.removeEventListener("click", accordion);
+      }else{
+        var parent = opener.parentElement;
+        var hasCollapsable = parent.classList.contains("collapsable") 
+        var newHeight = (!hasCollapsable) ? parent.scrollHeight + 'px' : this.offsetHeight + 'px';
+        parent.style.height = newHeight;
+        opener.addEventListener("click", accordion);
+      }
+    };
+  })
+
+  function accordion(clickEvent){
     var parent = this.parentElement,
       hasCollapsable = parent.classList.contains("collapsable"),
       newHeight = (hasCollapsable) ? parent.scrollHeight + 'px' : this.offsetHeight + 'px';
     parent.style.height = newHeight;
-    parent.classList.toggle("collapsable", !hasCollapsable);
+    if(clickEvent){
+      parent.classList.toggle("collapsable", !hasCollapsable);
+    }
   }
 })
 
