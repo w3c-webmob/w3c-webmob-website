@@ -34,16 +34,19 @@ body{
 }
 
 header{
+  position: -webkit-sticky;  
+  top: 0;  
+  z-index: 1;
+  padding: .5em 0;
   text-align: center;
   color: white;
-  padding: .5em;
   background-image: url("../images/background_1x.jpg");
   background-image: -webkit-image-set(
-   url("../images/background_1x.jpg") 1x,
-         url("../images/background_2x.jpg") 2x);
+    url("../images/background_1x.jpg") 1x,
+    url("../images/background_2x.jpg") 2x);
   background-image: image-set(
-   url("../images/background_1x.jpg") 1x,
-         url("../images/background_2x.jpg") 2x);
+    url("../images/background_1x.jpg") 1x,
+    url("../images/background_2x.jpg") 2x);
   background-size: cover;
   background-position: 100% 30%;
   font-family: nord;
@@ -57,7 +60,8 @@ header{
 }
 
 header h1{
-  margin: 0;
+  line-height: 1em;
+  margin: .2em 0 .5em 0;
   display: inline-block;
   background-color: rgba(0,0,0,.6);
   padding: .2em .2em .2em .2em;
@@ -71,7 +75,7 @@ p, .fancypill{
   line-height: 1.5em;
   text-align: center;
   font-style: italic;
-  padding: 1.5em 0;
+  padding: .5em 0;
   font-size: 1em;
   font-weight: bold;
   background-image: url("../images/logos.jpg");
@@ -111,11 +115,13 @@ section > p{
 }
 
 section > h2{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   font-size: 1em;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: rgb(94, 85, 76);
   background-color: rgb(229, 222, 213);
-  padding: 0.625em;
+  line-height: 2.2em;
+  padding-left: 0.625em;
   border-bottom: 0.2em solid #e0d9ce;
 }
 
@@ -197,13 +203,15 @@ main{
   background-color: rgb(250, 245, 236);
 }
 
-main:before{
+header:after{
+  margin: -.5em;
   content: "";
+  width: auto;
   display:block;
   position: relative;
-  height: 1.5em;
+  height: 1em;
   background: linear-gradient(to right,  #ffffff 0%,#ffffff 6%,#94d9f2 6%,#94d9f2 13%,#f98d63 13%,#f98d63 19%,#f3ef7c 19%,#f3ef7c 25%,#2ebe9b 25%,#2ebe9b 31%,#9375dc 31%,#9375dc 37%,#faaca7 37%,#faaca7 44%,#3c87dc 44%,#3c87dc 50%,#8ec452 50%,#8ec452 56%,#fabc44 56%,#fabc44 63%,#d86bad 63%,#d86bad 69%,#d84e5a 69%,#d84e5a 75%,#f5f6d3 75%,#f5f6d3 81%,#7b6562 81%,#7b6562 88%,#424a54 88%,#424a54 94%,#030303 94%,#030303 100%);
-  border-bottom: .5em solid rgb(200, 194, 183);
+  border-bottom: .25em solid rgb(200, 194, 183);
 }
 
 .visuallyhidden { 
@@ -214,12 +222,27 @@ main:before{
   margin: -1px; padding: 0; border: 0; 
 }
 
+section{
+    overflow: auto;
+    -webkit-transition: height .5s;
+          transition: height .5s;
+}
+
+section.collapsable{
+  overflow: hidden;
+  height: 2.35em; 
+}
+
 @media (min-width: 36em) {
+    section.collapsable{
+      overflow: auto;
+      height: auto;
+    }
     ul.multicol{
          -moz-column-count: 2;
       -webkit-column-count: 2;
               column-count: 2;
-    } 
+    }
 }
 
 @media (min-width: 64em) {
