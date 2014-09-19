@@ -40,14 +40,16 @@ header{
   background-image: url("../images/background_1x.jpg");
   background-image: -webkit-image-set(
     url("../images/background_1x.jpg") 1x,
-    url("../images/background_2x.jpg") 2x);
+    url("../images/background_2x_crop.jpg") 2x);
   background-image: image-set(
     url("../images/background_1x.jpg") 1x,
-    url("../images/background_2x.jpg") 2x);
+    url("../images/background_2x_crop.jpg") 2x);
   background-size: cover;
-  background-position: 100% 30%;
+  background-position: 50% 60%;
   font-family: nord;
   font-size: 1em;
+  transform: translate3d(0px, 0px, 1px);
+  transition: background-position 5s;
 }
 
 @media (min-width: 64em) {
@@ -223,7 +225,7 @@ header:after{
 
 .accelerated{
   overflow: hidden;
-  transition: height 1s;
+  transition: height .7s;
   transform: translate3d(0px, 0px, 1px);
 }
 
@@ -234,6 +236,9 @@ section.collapsable{
 
 
 @media (min-width: 36em) {
+    section > h2{
+      font-size: .9em;
+    }
     section.collapsable{
       overflow: hidden;
       height: auto;
@@ -243,6 +248,10 @@ section.collapsable{
       -webkit-column-count: 2;
               column-count: 2;
     }
+
+    header{
+        background-position: 50% 50%;
+    }
 }
 
 @media (min-width: 64em) {
@@ -250,5 +259,10 @@ section.collapsable{
        -moz-column-count: 3;
     -webkit-column-count: 3;
             column-count: 3;
+  }
+
+
+  header{
+    background-position: 50% 30%;
   }
 }
