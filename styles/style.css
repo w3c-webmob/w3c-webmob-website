@@ -201,7 +201,7 @@ main{
 }
 
 header:after{
-  margin: -.5em;
+  margin: -.5em 0;
   content: "";
   width: auto;
   display:block;

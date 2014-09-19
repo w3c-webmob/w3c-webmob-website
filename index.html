@@ -226,17 +226,24 @@
 /*
 Accordion
 */
-(function(){
-  var openers = document.querySelectorAll(".collapsable .opener");
+window.addEventListener("DOMContentLoaded", function(){
+  var openers = document.querySelectorAll(".collapsable .opener"),
+    mediaMatcher = (matchMedia) ? matchMedia("(max-width: 36em)") : null;
+  
   for (var i = openers.length - 1; i >= 0; i--) {
-    openers[i].addEventListener("click", function(){
-      var parent = this.parentElement,
-          hasCollapsable = parent.classList.contains("collapsable"); 
-      parent.style.height = (hasCollapsable) ?
-          parent.scrollHeight + 'px'
-        : parent.style.height = this.offsetHeight + 'px';
-      parent.classList.toggle("collapsable");
-    });
-  };
-}())
+    var opener = openers[i];
+    (mediaMatcher && mediaMatcher.matches) ?
+        opener.addEventListener("click", accordion)
+      : opener.parentElement.classList.toggle("collapsable");
+  }
+  
+  function accordion(){
+    var parent = this.parentElement,
+      hasCollapsable = parent.classList.contains("collapsable"),
+      newHeight = (hasCollapsable) ? parent.scrollHeight + 'px' : this.offsetHeight + 'px';
+    parent.style.height = newHeight;
+    parent.classList.toggle("collapsable", !hasCollapsable);
+  }
+})
+
 </script>
