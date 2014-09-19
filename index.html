@@ -52,8 +52,8 @@
           </li>
         </ul>
       </section>
-      <section id="publications">
-        <h2>
+      <section id="publications" class="collapsable">
+        <h2 class="opener">
           Publications
         </h2>
         <ul class="docslist multicol">
@@ -103,8 +103,8 @@
         </ul>
       </section>
       
-      <section>
-        <h2 id="meetings">
+      <section class="collapsable">
+        <h2 class= "opener" id="meetings">
           Meetings
         </h2>
         <ul class="interactivelist multicol">
@@ -140,8 +140,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>
+      <section class="collapsable">
+        <h2 class="opener">
           Useful Resources
         </h2>
         <ul class="linkslist multicol">
@@ -221,3 +221,22 @@
     </footer>
   </body>
 </html>
+
+<script>
+/*
+Accordion
+*/
+(function(){
+  var openers = document.querySelectorAll(".collapsable .opener");
+  for (var i = openers.length - 1; i >= 0; i--) {
+    openers[i].addEventListener("click", function(){
+      var parent = this.parentElement,
+          hasCollapsable = parent.classList.contains("collapsable"); 
+      parent.style.height = (hasCollapsable) ?
+          parent.scrollHeight + 'px'
+        : parent.style.height = this.offsetHeight + 'px';
+      parent.classList.toggle("collapsable");
+    });
+  };
+}())
+</script>
