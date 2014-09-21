@@ -1,0 +1,8 @@
+<svg id="battery" width="73.125px" height="40.125px" viewBox="0 0 195 107" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M179,81 L179,107 L0,107 L0,0 L179,0 L179,29 L195,29 L195,81 L179,81 Z M24,25 L24,83 L155,83 L155,25 L24,25 Z" stroke="white" fill="white">
+    </path>
+    <path id="batteryMeter" d="M34,34 L34,72 L105.042969,72 L67.1738281,34 L34,34 Z" id="Rectangle-4" stroke="white" fill="white">
+    </path>
+  </g>
+</svg>
