@@ -226,45 +226,79 @@
 /*
 Accordion
 */
+
+function Accordion(openers){
+  this.mediaMatcher = (matchMedia) ? matchMedia("(max-width: 36em)") : null; 
+
+  var sections = [];
+
+  if(!this.mediaMatcher){
+    openAccordion(openers);
+    return;
+  }
+
+  function openAccordion(openers){
+    for (var i = 0; i < openers.length; i++) {
+      var opener = openers[i];
+      opener.parentElement.classList.remove("collapsable");
+    }
+  }
+
+  function Section(opener, mediaMatcher){
+      this.parent = opener.parentElement;
+      this.opener = opener;
+      this.reactor = this.react.bind(this); 
+
+      Object.defineProperty(this, "isCollapsed", {
+        get: function(){
+          return this.parent.classList.contains("collapsable");
+        }
+      });
+
+      Object.defineProperty(this, "maxHeight", {
+        get: function(){
+          return this.parent.scrollHeight + "px";
+        }
+      });
+
+      Object.defineProperty(this, "minHeight", {
+        get: function(){
+          return this.opener.offsetHeight + "px"; 
+        }
+      });
+      mediaMatcher.addListener(this.change.bind(this));
+      this.change(mediaMatcher);
+  }
+
+  Section.prototype.react = function(mqChange){
+    if(this.isCollapsed){
+       this.parent.style.height = this.maxHeight;
+    }else{
+      this.parent.style.height = this.minHeight;
+    }
+    this.parent.classList.toggle("collapsable");
+  }
+
+  Section.prototype.change = function(mqChange) {
+    if(mqChange.matches){
+      this.opener.addEventListener("click", this.reactor);
+      if(!this.isCollapsed){
+        this.parent.style.height = this.maxHeight; 
+      }
+    }else{
+      this.parent.style.height = "";
+      this.opener.removeEventListener("click", this.reactor );
+    }
+  };
+
+  for (var i = 0; i < openers.length; i++) {
+    sections.push(new Section(openers[i], this.mediaMatcher))
+  };
+}
+
 window.addEventListener("DOMContentLoaded", function(){
   var openers = document.querySelectorAll(".collapsable .opener"),
-    mediaMatcher = (matchMedia) ? matchMedia("(max-width: 36em)") : null;
-  
-  for (var i = openers.length - 1; i >= 0; i--) {
-    var opener = openers[i];
-    if (mediaMatcher && mediaMatcher.matches) {
-      opener.addEventListener("click", accordion) 
-    }
+      accordion = new Accordion(openers);
   }
-  
-  mediaMatcher.addListener(function(ev){
-    //remove the explicit height
-    for (var i = openers.length - 1; i >= 0; i--) {
-      var opener = openers[i];
-      if (!ev.matches) {
-        if (opener.parentElement.style.height){
-          opener.parentElement.style.height = "";
-        }
-        opener.removeEventListener("click", accordion);
-      }else{
-        var parent = opener.parentElement;
-        var hasCollapsable = parent.classList.contains("collapsable") 
-        var newHeight = (!hasCollapsable) ? parent.scrollHeight + 'px' : this.offsetHeight + 'px';
-        parent.style.height = newHeight;
-        opener.addEventListener("click", accordion);
-      }
-    };
-  })
-
-  function accordion(clickEvent){
-    var parent = this.parentElement,
-      hasCollapsable = parent.classList.contains("collapsable"),
-      newHeight = (hasCollapsable) ? parent.scrollHeight + 'px' : this.offsetHeight + 'px';
-    parent.style.height = newHeight;
-    if(clickEvent){
-      parent.classList.toggle("collapsable", !hasCollapsable);
-    }
-  }
-})
-
+);
 </script>
