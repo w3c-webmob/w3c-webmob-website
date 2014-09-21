@@ -48,8 +48,9 @@ header{
   background-position: 50% 60%;
   font-family: nord;
   font-size: 1em;
-  transform: translate3d(0px, 0px, 1px);
-  transition: background-position 5s;
+  transform: translate3d(0, 0, 0);
+  transition: background-position 10s;
+  will-change: background-position;
 }
 
 header h1{
@@ -121,6 +122,7 @@ section > h2{
 footer{
    margin: 0.625em 0;
    text-align: center;
+   transform: translate3d(0, 0, 0);
 }
 
 #attributions{
@@ -139,7 +141,7 @@ footer{
 .buttonlist{
   list-style-type: none;
   padding-bottom: .7em;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .buttonlist > li{
@@ -170,7 +172,6 @@ img{
 }
 
 .docslist, .interactivelist{
-
   line-height: 2em;
 }
 
@@ -215,17 +216,16 @@ header:after{
   margin: -1px; padding: 0; border: 0; 
 }
 
-
-
 .accelerated{
   overflow: hidden;
   transition: height .7s;
-  transform: translate3d(0px, 0px, 1px);
+  transform: translate3d(0, 0, 0);
 }
 
 section.collapsable{
   overflow: hidden;
   height: 2.35em;
+  will-change: height;
 }
 
 
@@ -234,7 +234,6 @@ section.collapsable{
       font-size: .9em;
     }
     section.collapsable{
-      overflow: hidden;
       height: auto;
     }
     ul.multicol{
