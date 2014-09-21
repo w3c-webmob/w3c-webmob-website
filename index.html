@@ -13,7 +13,6 @@
       W3C Web Mobile Interest Group (WebMob)
     </title>
   </head>
-  
   <body>
     <header role="banner">
       <div>
@@ -21,7 +20,7 @@
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <path d="M179,81 L179,107 L0,107 L0,0 L179,0 L179,29 L195,29 L195,81 L179,81 Z M24,25 L24,83 L155,83 L155,25 L24,25 Z" stroke="white" fill="white">
             </path>
-            <path d="M34,34 L34,72 L105.042969,72 L67.1738281,34 L34,34 Z" id="Rectangle-4" stroke="white" fill="white">
+            <path id="batteryMeter" d="M34,34 L34,72 L105.042969,72 L67.1738281,34 L34,34 Z" id="Rectangle-4" stroke="white" fill="white">
             </path>
           </g>
         </svg>
@@ -47,7 +46,6 @@
           </li>
           <li>
             <a href="mailto:public-web-mobile-request@w3.org?subject=subscribe&amp;body=Subscribe%20me%20to%20the%20WebMob%20list!">Mailing List
-
             </a>
           </li>
         </ul>
@@ -103,7 +101,7 @@
         </ul>
       </section>
       
-      <section class="collapsable accelerated">
+      <section id="meetings" class="collapsable accelerated">
         <h2 class= "opener" id="meetings">
           Meetings
         </h2>
@@ -140,7 +138,7 @@
           </li>
         </ul>
       </section>
-      <section class="collapsable accelerated">
+      <section id="links" class="collapsable accelerated">
         <h2 class="opener">
           Useful Resources
         </h2>
@@ -223,82 +221,81 @@
 </html>
 
 <script>
-/*
-Accordion
-*/
+(function(){
+  function Accordion(openers){
+    this.mediaMatcher = (matchMedia) ? matchMedia("(max-width: 36em)") : null; 
 
-function Accordion(openers){
-  this.mediaMatcher = (matchMedia) ? matchMedia("(max-width: 36em)") : null; 
+    var sections = [];
 
-  var sections = [];
-
-  if(!this.mediaMatcher){
-    openAccordion(openers);
-    return;
-  }
-
-  function openAccordion(openers){
-    for (var i = 0; i < openers.length; i++) {
-      var opener = openers[i];
-      opener.parentElement.classList.remove("collapsable");
+    if(!this.mediaMatcher){
+      openAccordion(openers);
+      return;
     }
-  }
 
-  function Section(opener, mediaMatcher){
-      this.parent = opener.parentElement;
-      this.opener = opener;
-      this.reactor = this.react.bind(this); 
-
-      Object.defineProperty(this, "isCollapsed", {
-        get: function(){
-          return this.parent.classList.contains("collapsable");
-        }
-      });
-
-      Object.defineProperty(this, "maxHeight", {
-        get: function(){
-          return this.parent.scrollHeight + "px";
-        }
-      });
-
-      Object.defineProperty(this, "minHeight", {
-        get: function(){
-          return this.opener.offsetHeight + "px"; 
-        }
-      });
-      mediaMatcher.addListener(this.change.bind(this));
-      this.change(mediaMatcher);
-  }
-
-  Section.prototype.react = function(mqChange){
-    if(this.isCollapsed){
-       this.parent.style.height = this.maxHeight;
-    }else{
-      this.parent.style.height = this.minHeight;
-    }
-    this.parent.classList.toggle("collapsable");
-  }
-
-  Section.prototype.change = function(mqChange) {
-    if(mqChange.matches){
-      this.opener.addEventListener("click", this.reactor);
-      if(!this.isCollapsed){
-        this.parent.style.height = this.maxHeight; 
+    function openAccordion(openers){
+      for (var i = 0; i < openers.length; i++) {
+        var opener = openers[i];
+        opener.parentElement.classList.remove("collapsable");
       }
-    }else{
-      this.parent.style.height = "";
-      this.opener.removeEventListener("click", this.reactor );
     }
-  };
 
-  for (var i = 0; i < openers.length; i++) {
-    sections.push(new Section(openers[i], this.mediaMatcher))
-  };
-}
+    function Section(opener, mediaMatcher){
+        this.parent = opener.parentElement;
+        this.opener = opener;
+        this.reactor = this.react.bind(this); 
 
-window.addEventListener("DOMContentLoaded", function(){
-  var openers = document.querySelectorAll(".collapsable .opener"),
-      accordion = new Accordion(openers);
+        Object.defineProperty(this, "isCollapsed", {
+          get: function(){
+            return this.parent.classList.contains("collapsable");
+          }
+        });
+
+        Object.defineProperty(this, "maxHeight", {
+          get: function(){
+            return this.parent.scrollHeight + "px";
+          }
+        });
+
+        Object.defineProperty(this, "minHeight", {
+          get: function(){
+            return this.opener.offsetHeight + "px"; 
+          }
+        });
+        mediaMatcher.addListener(this.change.bind(this));
+        this.change(mediaMatcher);
+    }
+
+    Section.prototype.react = function(mqChange){
+      if(this.isCollapsed){
+         this.parent.style.height = this.maxHeight;
+      }else{
+        this.parent.style.height = this.minHeight;
+      }
+      this.parent.classList.toggle("collapsable");
+    }
+
+    Section.prototype.change = function(mqChange) {
+      if(mqChange.matches){
+        this.opener.addEventListener("click", this.reactor);
+        if(!this.isCollapsed){
+          this.parent.style.height = this.maxHeight; 
+        }
+      }else{
+        this.parent.style.height = "";
+        this.opener.removeEventListener("click", this.reactor );
+      }
+    };
+
+    for (var i = 0; i < openers.length; i++) {
+      sections.push(new Section(openers[i], this.mediaMatcher))
+    };
   }
-);
+
+  window.addEventListener("DOMContentLoaded", function(){
+    var openers = document.querySelectorAll(".collapsable .opener"),
+        accordion = new Accordion(openers);
+    }
+  );
+}())
+
 </script>
