@@ -223,71 +223,75 @@
 <script>
 (function(){
   function Accordion(openers){
-    this.mediaMatcher = (matchMedia) ? matchMedia("(max-width: 36em)") : null; 
-
-    var sections = [];
-
-    if(!this.mediaMatcher){
-      openAccordion(openers);
-      return;
+    var mediaMatcher = (matchMedia) ? matchMedia("(max-width: 36em)") : null,
+        sections = [];
+    /*
+    Sections of the accordion
+    */
+    function Section(opener){
+      this.opener = opener;
+      this.clickHandler = function(mqChange){
+        (this.isClosed) ?
+            this.parent.style.height = this.maxHeight
+          : this.parent.style.height = this.minHeight;
+        this.parent.classList.toggle("collapsable");
+      }.bind(this);
+      mediaMatcher.addListener(this.change.bind(this));
+      this.change(mediaMatcher);
     }
 
-    function openAccordion(openers){
-      for (var i = 0; i < openers.length; i++) {
-        var opener = openers[i];
-        opener.parentElement.classList.remove("collapsable");
-      }
-    }
-
-    function Section(opener, mediaMatcher){
-        this.parent = opener.parentElement;
-        this.opener = opener;
-        this.reactor = this.react.bind(this); 
-
-        Object.defineProperty(this, "isCollapsed", {
+    Object.defineProperties(Section.prototype,{
+        parent:{
+          get: function(){
+            return this.opener.parentElement;
+          }
+        },
+        isClosed: {
           get: function(){
             return this.parent.classList.contains("collapsable");
           }
-        });
-
-        Object.defineProperty(this, "maxHeight", {
+        },
+        maxHeight: {
           get: function(){
             return this.parent.scrollHeight + "px";
           }
-        });
-
-        Object.defineProperty(this, "minHeight", {
+        }, 
+        minHeight:{
           get: function(){
             return this.opener.offsetHeight + "px"; 
           }
-        });
-        mediaMatcher.addListener(this.change.bind(this));
-        this.change(mediaMatcher);
-    }
-
-    Section.prototype.react = function(mqChange){
-      if(this.isCollapsed){
-         this.parent.style.height = this.maxHeight;
-      }else{
-        this.parent.style.height = this.minHeight;
       }
-      this.parent.classList.toggle("collapsable");
-    }
+    });
 
+    /**
+    reactToMediaMatch 
+    **/
     Section.prototype.change = function(mqChange) {
       if(mqChange.matches){
-        this.opener.addEventListener("click", this.reactor);
-        if(!this.isCollapsed){
+        this.opener.addEventListener("click", this.clickHandler);
+        if(!this.isClosed){
           this.parent.style.height = this.maxHeight; 
         }
-      }else{
-        this.parent.style.height = "";
-        this.opener.removeEventListener("click", this.reactor );
+        return;
       }
+      this.parent.style.height = "";
+      this.opener.removeEventListener("click", this.clickHandler );
     };
 
+    function openAccordion(openers){
+      openers.forEach(function(opener){
+        opener.parentElement.classList.remove("collapsable");
+      });
+    }
+
+    //if we can't use the media matcher, then open the accordion and abort
+    if(!mediaMatcher){
+      return openAccordion(openers);
+    }
+
+    //otherwise, set up the accordion
     for (var i = 0; i < openers.length; i++) {
-      sections.push(new Section(openers[i], this.mediaMatcher))
+      sections.push(new Section(openers[i], mediaMatcher))
     };
   }
 
