@@ -193,6 +193,11 @@ img{
   background-image: url("../images/link.svg");
 }
 
+.linkslist > li.mail {
+  background-image: url("../images/mail.svg");
+}
+
+
 main{
   background-color: rgb(250, 245, 236);
 }
