@@ -2,8 +2,12 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-startup-image" href="/images/splash.png">
+  <link rel="apple-touch-startup-image" href="/images/splash2x.png" media="(device-width: 414px)">
+  <link rel="apple-touch-icon" href="/images/battery_icon.png">
   <meta name="application-name" content="WebMob">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="styles/style.css">
@@ -22,6 +26,10 @@
           <path d="M179,81 L179,107 L0,107 L0,0 L179,0 L179,29 L195,29 L195,81 L179,81 Z M24,25 L24,83 L155,83 L155,25 L24,25 Z" stroke="white" fill="white">
           </path>
           <path id="batteryMeter" d="M34,34 L34,72 L105.042969,72 L67.1738281,34 L34,34 Z" id="Rectangle-4" stroke="white" fill="white">
+           <animate id="bmAnimator" attributeName="d" 
+                    to="M34,34 L34,72 L105.042969,72 L67.1738281,34 L34,34 Z"
+                    from="M34,34 L34,72 L145,72 L145,34 L34,34 Z" 
+             begin="0s" dur="1s" repeatCount="1" fill="remove"/>
           </path>
         </g>
       </svg>
